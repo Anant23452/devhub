@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Navbar(){
     return(
-        <nav>
+        <nav className="bg-orange-500 flex justify-between items-center p-4">
             <Link href="/">DevHum</Link>
             <div className="flex">
                 <Link href="/">Home</Link>
