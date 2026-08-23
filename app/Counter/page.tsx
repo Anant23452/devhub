@@ -11,7 +11,7 @@ export default function CounterPage() {
 
       <p>{count}</p>
 
-      <button onClick={() => setCount(count + 1)}>
+      <button className="bg-blue-500" onClick={() => setCount(count + 1)}>
         Increase
       </button>
     </main>
