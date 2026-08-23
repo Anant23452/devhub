@@ -1,3 +1,5 @@
+"use client"
+import { useState } from "react";
 import { developers } from "@/data/developers";
 
 type Developer = {
@@ -14,6 +16,7 @@ type DeveloperCardProps={
 export default function DeveloperCard({
     developer,
 }:DeveloperCardProps){
+    const [liked,setLiked] = useState(false);
     return(
       <article className=" mx-auto overflow-hidden rounded-xl text p-6 shadow-lg border border-gray-100 transition-all hover:shadow-xl">
   {/* Name and Username Section */}
