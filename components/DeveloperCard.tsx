@@ -51,10 +51,11 @@ export default function DeveloperCard({
     ))}
   </div>
 
-  <div className="tinder-feature ">
-    <button onClick={()=>setLiked(false)}>❌Pass</button>
-    <button onClick={()=>setLiked(true)}>❤️Like</button>
+  <div className="tinder-feature flex  mt-4 p-3 justify-evenly ">
+    <button className="" onClick={()=>setLiked(false)}>❌Pass</button>
+    <button className="" onClick={()=>setLiked(true)}>❤️Like</button>
   </div>
+  {liked && <p>❤️U liked this developer!</p>}
 </article>
 
     )
