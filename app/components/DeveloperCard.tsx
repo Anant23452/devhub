@@ -6,3 +6,16 @@ type Developer = {
   bio: string;
   skills: string[];
 };
+type DeveloperCardProps={
+    developer:Developer
+}
+export default function DeveloperCard({
+    developer,
+}:DeveloperCardProps){
+    return(
+        <article>
+
+            
+        </article>
+    )
+}
