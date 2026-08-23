@@ -3,7 +3,7 @@ import { developers } from "@/data/developers";
 
 export default function DevelopersPage() {
   return (
-   <main className="min-h-screen bg-slate-50 px-4 py-12 dark:bg-slate-950 sm:px-6 lg:px-8">
+   <main className="min-h-screen bg-slate-50 px-4 py-16 dark:bg-slate-950 sm:px-6 lg:px-8">
   {/* Header Section */}
   <header className="mx-auto max-w-3xl text-center mb-16">
     <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl">
