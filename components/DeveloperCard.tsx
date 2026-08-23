@@ -50,6 +50,11 @@ export default function DeveloperCard({
       </span>
     ))}
   </div>
+
+  <div className="tinder-feature ">
+    <button onClick={()=>setLiked(false)}>❌Pass</button>
+    <button onClick={()=>setLiked(true)}>❤️Like</button>
+  </div>
 </article>
 
     )
