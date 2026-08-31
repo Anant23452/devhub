@@ -10,13 +10,17 @@ type Developer = {
   bio: string;
   skills: string[];
 };
-type DeveloperCardProps={
-    developer:Developer
-}
+type DeveloperCardProps = {
+  developer: Developer;
+  onLike: () => void;
+  onPass: () => void;
+};
 export default function DeveloperCard({
     developer,
+    onLike,
+    onPass
 }:DeveloperCardProps){
-    const [liked,setLiked] = useState(false);
+    
     return(
       <article className=" mx-auto overflow-hidden rounded-xl text p-6 shadow-lg border border-gray-100 transition-all hover:shadow-xl">
   {/* Name and Username Section */}
@@ -52,8 +56,8 @@ export default function DeveloperCard({
   </div>
 
   <div className="tinder-feature flex  mt-4 p-3 justify-evenly ">
-    <button className="" onClick={()=>setLiked(false)}>❌Pass</button>
-    <button className="" onClick={()=>setLiked(true)}>❤️Like</button>
+    <button className="" onClick={onPass}>❌Pass</button>
+    <button className="" onClick={onLike}>❤️Like</button>
   </div>
   {liked && <p>❤️U liked this developer!</p>}
 </article>
