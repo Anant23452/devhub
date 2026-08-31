@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+
 import { developers } from "@/data/developers";
 
 type Developer = {
@@ -59,7 +59,7 @@ export default function DeveloperCard({
     <button className="" onClick={onPass}>❌Pass</button>
     <button className="" onClick={onLike}>❤️Like</button>
   </div>
-  {liked && <p>❤️U liked this developer!</p>}
+ 
 </article>
 
     )

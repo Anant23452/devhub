@@ -1,5 +1,7 @@
-import DeveloperCard from "@/components/DeveloperCard";
+'use client'
 import { useState } from "react";
+
+import DeveloperCard from "@/components/DeveloperCard";
 import { developers } from "@/data/developers";
 
 export default function DevelopersPage() {
