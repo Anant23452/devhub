@@ -1,3 +1,4 @@
+import type { Developer } from "@/types/developer";
 export const developers = [
   {
     id: 1,
