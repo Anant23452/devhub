@@ -27,7 +27,15 @@ export default function ConnectionsPage(){
                            <article key={developer.id} className="">
                             <h2>{developer.name} </h2>
                             <p>{developer.role} </p>
-                            
+
+                            <div>
+                                {developer.skills.map((skill)=>(
+                                    <span key={skill} className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+
                            </article>
                         ))}
                     </div>
