@@ -24,7 +24,11 @@ export default function ConnectionsPage(){
                 ):(
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {likedDevelopers.map((developer) => (
-                            <DeveloperCard key={developer.id} developer={developer} />
+                           <article key={developer.id} className="">
+                            <h2>{developer.name} </h2>
+                            <p>{developer.role} </p>
+                            
+                           </article>
                         ))}
                     </div>
                 )}
