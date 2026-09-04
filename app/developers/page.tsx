@@ -7,9 +7,18 @@ import { developers } from "@/data/developers";
 export default function DevelopersPage() {
   const [currIndex,setCurrIndex]= useState(0);
   const currDeveloper = developers[currIndex];
-  const handleNext = ()=>{
+  //for saved and build connnection 
+  const[likeDeveloper,setLikedDeveloper]= useState<number[]>([]);
+  const handleLike = ()=>{
+    setLikedDeveloper((prev)=>[
+      ...prev,
+      currDeveloper.id,
+    ])
     setCurrIndex((prev)=>prev+1)
 
+  }
+  const handlePass = ()=>{
+    setCurrIndex((prev)=>prev+1)
   }
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-16 dark:bg-slate-950 sm:px-6 lg:px-8">
@@ -28,8 +37,8 @@ export default function DevelopersPage() {
           currDeveloper?(
             <DeveloperCard
             developer={currDeveloper}
-            onLike={handleNext}
-            onPass={handleNext}
+            onLike={handleLike}
+            onPass={handlePass}
 
             
             />
@@ -37,6 +46,7 @@ export default function DevelopersPage() {
             <p>NO more Developer Exist</p>
           )
         }
+        <p>Liked Developer :{likeDeveloper.length} </p>
     </main>
   );
 }
