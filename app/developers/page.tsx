@@ -10,10 +10,18 @@ export default function DevelopersPage() {
   //for saved and build connnection 
   const[likeDeveloper,setLikedDeveloper]= useState<number[]>([]);
   const handleLike = ()=>{
+    //increased  value of like developer 
     setLikedDeveloper((prev)=>[
       ...prev,
       currDeveloper.id,
     ])
+    //saved liked developer to local strorage
+    localStorage.setItem(
+      "likedDeveloper",
+      JSON.stringify(updatedlike)
+    )
+
+
     setCurrIndex((prev)=>prev+1)
 
   }
