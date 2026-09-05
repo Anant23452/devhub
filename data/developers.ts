@@ -7,6 +7,7 @@ export const developers = [
     role: "Frontend Developer",
     bio: "Building modern web experiences with React and Next.js.",
     skills: ["React", "Next.js", "TypeScript"],
+    location: "New Delhi, India"
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const developers = [
     role: "Backend Developer",
     bio: "Interested in APIs, databases and scalable backend systems.",
     skills: ["Node.js", "Express", "MongoDB"],
+location: "New Delhi, India"
   },
   {
     id: 3,
@@ -23,5 +25,6 @@ export const developers = [
     role: "Full Stack Developer",
     bio: "I enjoy turning ideas into complete web applications.",
     skills: ["React", "Node.js", "MongoDB"],
+    location: "New Delhi, India"
   },
 ];
