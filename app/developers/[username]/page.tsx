@@ -1,4 +1,5 @@
 import { developers } from "@/data/developers";
+import Link from "next/link";
 
 type DeveloperProfilePageProps = {
   params: Promise<{
@@ -69,6 +70,13 @@ export default async function DeveloperProfilePage({
 
           </div>
         ))}
+      </section>
+      <section className="section-6">
+        <h1>
+          Link
+        </h1>
+        <Link href={developer.github}>Github</Link>
+        <Link href= {developer.linkedin}
       </section>
     </main>
   );
