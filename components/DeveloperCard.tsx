@@ -1,6 +1,7 @@
 "use client"
 
 import { developers } from "@/data/developers";
+import Link from "next/link";
 
 
 type DeveloperCardProps = {
@@ -52,6 +53,11 @@ export default function DeveloperCard({
     <button className="" onClick={onPass}>❌Pass</button>
     <button className="" onClick={onLike}>❤️Like</button>
   </div>
+  <Link href={`/developers/${developer.username}`}>
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      View Profile
+    </button>
+  </Link>
  
 </article>
 
