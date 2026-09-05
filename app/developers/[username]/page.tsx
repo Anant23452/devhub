@@ -12,7 +12,16 @@ export default function DeveloperPage({params}:DeveloperPageProps){
     }
     return (
         <main>
-            
+            <h1>{developer.username} </h1>
+            <p>{developer.name} </p>
+            <h2>{developer.bio} </h2>
+            <p>{developer.location} </p>
+            <div>
+                {developer.skills.map((skill)=>(
+                    <span key ={skill}>{skill} </span>
+                ))}
+            </div>
+
         </main>
     )
 
