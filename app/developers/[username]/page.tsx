@@ -6,5 +6,14 @@ type DeveloperPage={
 };
 export default function DeveloperPage({params}:DeveloperPageProps){
     const developer= developers.find(dev=>dev.username===params.username);
+    if(!developer){
+        return <h1>Developer not found</h1>
+
+    }
+    return (
+        <main>
+            
+        </main>
+    )
 
 }
