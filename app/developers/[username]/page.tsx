@@ -20,12 +20,12 @@ export default async function DeveloperProfilePage({
   }
 
   return (
-    <main className="w-full ">
-      <h1>{developer.name}</h1>
+    <main className="w-full h-screen  p-20 ">
+      <h1 className="text-5xl font-bold">{developer.name}</h1>
 
-      <p>@{developer.username}</p>
+      <p className="text-lg text-gray-600">@{developer.username}</p>
 
-      <h2>{developer.role}</h2>
+      <h2 className="text-2xl ">{developer.role}</h2>
 
       <p>{developer.bio}</p>
 
