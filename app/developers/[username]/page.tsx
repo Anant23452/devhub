@@ -47,18 +47,21 @@ export default async function DeveloperProfilePage({
 
       {/* Social / Portfolio Links */}
       <div className="mt-6 flex items-center gap-4">
-        <Link
+        <a
           href={developer.github}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-sm font-medium transition-colors border border-neutral-700"
+          target="_blank" rel="noreferrer"
         >
           GitHub
-        </Link>
-        <Link
+        </a>
+        <a
+          target="_blank"
           href={developer.linkedin}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-sm font-medium transition-colors border border-neutral-700"
+          rel="norferror"
         >
           LinkedIn
-        </Link>
+        </a>
       </div>
     </header>
 
