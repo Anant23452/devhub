@@ -59,7 +59,13 @@ export default async function DeveloperProfilePage({
         {developer.projects.map((project)=>(
           <div key={project.id}>
             <h2>{project.title}</h2>
-            
+            <p>{project.description} </p>
+            <div>
+              {project.tech.map((tech)=>(
+                <span key={tech}>{tech}</span>
+              ))}
+            </div>
+
 
           </div>
         ))}
