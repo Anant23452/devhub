@@ -11,7 +11,7 @@ export default function DeveloperPage({params}:DeveloperPageProps){
 
     }
     return (
-        <main>
+        <main  className=" mx-auto overflow-hidden rounded-xl text p-6 shadow-lg border border-gray-100 transition-all hover:shadow-xl">
             <h1>{developer.username} </h1>
             <p>{developer.name} </p>
             <h2>{developer.bio} </h2>
